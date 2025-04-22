@@ -40,9 +40,17 @@ body {
 
 /* ------------------------------------------------ */
 
+* {
+  /* border: 1px solid red; */
+}
+
 body {
   --color_body_background: #5ba6ed;
   --color_right_side_background: #498ad3;
+}
+
+.welcome_text {
+  font-size: 1.1rem;
 }
 
 .background_img {
@@ -70,4 +78,48 @@ body {
 
 .card_right {
   background-color: var(--color_right_side_background);
+  /* padding-left: 5ch;
+  padding-right: 15ch; */
 }
+
+.card_right > * {
+  /* padding-left: 5ch;
+  padding-right: 15ch; */
+  padding-left: 3vw;
+  padding-right: 6vw;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2ch;
+  justify-content: space-between;
+}
+
+form > * {
+  /* border: 2px solid yellow; */
+  min-width: 45%;
+  /* align-items: center; */
+}
+
+input {
+  min-width: 20ch;
+}
+
+.form_div {
+  /* border: 2px solid orange; */
+  display: flex;
+  flex-direction: column;
+  gap: 1ch;
+}
+
+/* .form_div > label {
+  width: 100%;
+} */
+
+/* .name_container,
+.last_name_container,
+.email_container,
+.phone_container,
+.password_container,
+.password_container_confirm */
