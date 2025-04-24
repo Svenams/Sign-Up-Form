@@ -45,21 +45,12 @@ body {
 }
 
 body {
-  --color_body_background: #5ba6ed;
+  --color_body_background: #6cb6ff; /*#5ba6ed; */
   --color_right_side_background: #498ad3;
 }
 
 .welcome_text {
-  font-size: 1.1rem;
-}
-
-.background_img {
-  background-image: url("images/B668213D-B9C9-42DC-A2C0-207CFA2B5781_1_105_c.jpeg");
-  background-size: cover; /* or contain */
-  background-repeat: no-repeat;
-  background-position: center;
-  min-width: 40%;
-  height: 600px;
+  font-size: 1.2rem;
 }
 
 body {
@@ -70,10 +61,22 @@ body {
 }
 
 .card {
-  border: 2px solid black;
   max-width: 1300px;
   margin-inline: auto;
   display: flex;
+
+  /* border: 2px solid #498ad3; */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.background_img {
+  background-image: url("images/B668213D-B9C9-42DC-A2C0-207CFA2B5781_1_105_c.jpeg");
+  background-size: cover; /* or contain */
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 50%;
 }
 
 .card_right {
@@ -83,39 +86,56 @@ body {
 }
 
 .card_right > * {
-  /* padding-left: 5ch;
-  padding-right: 15ch; */
-  padding-left: 3vw;
-  padding-right: 6vw;
+  padding-left: 2vw;
+  padding-right: 3vw;
 }
 
 form {
   display: flex;
   flex-wrap: wrap;
   gap: 2ch;
-  justify-content: space-between;
+  background-color: var(--color_body_background);
+  /* border: 2px solid violet; */
+  padding-bottom: 2ch;
 }
 
 form > * {
   /* border: 2px solid yellow; */
-  min-width: 45%;
+  min-width: 35%;
   /* align-items: center; */
 }
 
 input {
-  min-width: 20ch;
+  min-width: 10ch;
+  font-size: 1em;
+  /* border: 2px solid orange; */
 }
 
 .form_div {
   /* border: 2px solid orange; */
   display: flex;
   flex-direction: column;
-  gap: 1ch;
 }
 
-/* .form_div > label {
-  width: 100%;
-} */
+.h1_container {
+  margin-top: 5%;
+}
+
+.h2_container {
+  margin-top: 10%;
+  padding-top: 1ch;
+  padding-bottom: 3%;
+  background-color: var(--color_body_background);
+}
+
+.submit_container {
+  margin-top: 10%;
+}
+
+.gap {
+  /* border: 2px solid orange; */
+  padding-bottom: 0.5ch;
+}
 
 /* .name_container,
 .last_name_container,

@@ -10,37 +10,38 @@
     <div class="card">
       <div class="background_img"></div>
       <div class="card_right">
-        <h1>Svenams Husky-Tours</h1>
+        <h1 class="h1_container">Svenams Husky-Tours</h1>
         <p class="welcome_text">
           Welcome to my pretend Husky tour through the magical Swedish Lapland!
           If you're dreaming of an unforgettable adventure through snow-covered,
           mystical forests led by a team of enthusiastic huskies — you're in the
-          right place. Sign up now for an epic (but totally fake) ride!
+          right place. <br />
+          Sign up now for an epic (but totally fake) ride!
         </p>
-        <h2>Let's do it!</h2>
+        <h2 class="h2_container">Let's do it!</h2>
         <form action="#" id="user_form">
           <div class="form_div name_container">
-            <label class="name_label" for="user_name">First Name</label>
+            <label class="name_label gap" for="user_name">First Name</label>
             <input type="text" id="user_name" />
           </div>
 
           <div class="form_div last_name_container">
-            <label for="user_last_name">Last Name</label>
+            <label class="gap" for="user_last_name">Last Name</label>
             <input type="text" id="user_last_name" />
           </div>
 
           <div class="form_div email_container">
-            <label for="user_email">Email</label>
+            <label class="gap" for="user_email">Email</label>
             <input type="email" name="user_email_backend" id="user_email" />
           </div>
 
           <div class="form_div phone_container">
-            <label for="user_phone">Phone Number</label>
+            <label class="gap" for="user_phone">Phone Number</label>
             <input type="tel" name="user_phone_backend" id="user_phone" />
           </div>
 
           <div class="form_div password_container">
-            <label for="user_password">Password</label>
+            <label class="gap" for="user_password">Password</label>
             <input
               type="password"
               name="user_password_backend"
@@ -49,7 +50,9 @@
           </div>
 
           <div class="form_div password_container_confirm">
-            <label for="user_password_confirm">Confirm Password</label>
+            <label class="gap" for="user_password_confirm"
+              >Confirm Password</label
+            >
             <input
               type="password"
               name="user_password_backend_confirm"
@@ -57,7 +60,7 @@
             />
           </div>
         </form>
-        <div class="form_div submit_container">
+        <div class="submit_container">
           <button form="user_form" type="submit">Create Account</button>
           <p>Already have an account? Log in</p>
         </div>
