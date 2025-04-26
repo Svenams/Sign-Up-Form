@@ -10,34 +10,45 @@
     <div class="card">
       <div class="background_img"></div>
       <div class="card_right">
-        <h1 class="h1_container">Svenams Husky-Tours</h1>
-        <p class="welcome_text">
+        <h1 class="h1_container card_right_child">Svenams Husky-Tours</h1>
+        <p class="welcome_text card_right_child">
           Welcome to my pretend Husky tour through the magical Swedish Lapland!
           If you're dreaming of an unforgettable adventure through snow-covered,
           mystical forests led by a team of enthusiastic huskies — you're in the
           right place. <br />
           Sign up now for an epic (but totally fake) ride!
         </p>
-        <h2 class="h2_container">Let's do it!</h2>
-        <form action="#" id="user_form">
+        <h2 class="h2_container card_right_child">Let's do it!</h2>
+        <form class="form_container card_right_child" action="#" id="user_form">
           <div class="form_div name_container">
             <label class="name_label gap" for="user_name">First Name</label>
-            <input type="text" id="user_name" />
+            <input type="text" id="user_name" placeholder=" " />
           </div>
 
           <div class="form_div last_name_container">
             <label class="gap" for="user_last_name">Last Name</label>
-            <input type="text" id="user_last_name" />
+            <input type="text" id="user_last_name" placeholder=" " />
           </div>
 
           <div class="form_div email_container">
             <label class="gap" for="user_email">Email</label>
-            <input type="email" name="user_email_backend" id="user_email" />
+            <input
+              type="email"
+              name="user_email_backend"
+              id="user_email"
+              placeholder=" "
+              required
+            />
           </div>
 
           <div class="form_div phone_container">
             <label class="gap" for="user_phone">Phone Number</label>
-            <input type="tel" name="user_phone_backend" id="user_phone" />
+            <input
+              type="tel"
+              name="user_phone_backend"
+              id="user_phone"
+              placeholder=" "
+            />
           </div>
 
           <div class="form_div password_container">
@@ -46,6 +57,7 @@
               type="password"
               name="user_password_backend"
               id="user_password"
+              placeholder="At least 8 characters"
             />
           </div>
 
@@ -57,12 +69,18 @@
               type="password"
               name="user_password_backend_confirm"
               id="user_password_confirm"
+              minlength="8"
+              placeholder="At least 8 characters"
             />
           </div>
         </form>
-        <div class="submit_container">
-          <button form="user_form" type="submit">Create Account</button>
-          <p>Already have an account? Log in</p>
+        <div class="submit_container card_right_child">
+          <button class="btn" form="user_form" type="submit">
+            Create Account
+          </button>
+          <p class="account_text">
+            Already have an account? <a class="log_in_link" href="#">Log in</a>
+          </p>
         </div>
       </div>
     </div>
